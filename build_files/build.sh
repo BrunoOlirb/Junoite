@@ -25,7 +25,7 @@ dnf5 -y install \
         google-noto-serif-cjk-fonts \
         --setopt=install_weak_deps=False
 
-### Uninstall packages that come as "dependencies".
+### Remove kwallet packages.
 
 dnf5 -y remove \
         kf5-kwallet \
