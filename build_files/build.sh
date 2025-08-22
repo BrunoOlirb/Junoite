@@ -19,9 +19,19 @@ dnf5 -y install \
         kitty \
         flatpak \
         distrobox \
+        google-noto-emoji-fonts \
+        google-noto-color-emoji-fonts \
+        google-noto-sans-cjk-fonts \
+        google-noto-serif-cjk-fonts \
         --setopt=install_weak_deps=False
 
+### Uninstall packages that come as "dependencies".
+
+dnf5 -y remove \
+        kwallet
+
 #### Systemd
+
 systemctl enable sddm.service
 systemctl set-default graphical.target
 systemctl enable podman.socket
