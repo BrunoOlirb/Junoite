@@ -28,7 +28,10 @@ dnf5 -y install \
 ### Uninstall packages that come as "dependencies".
 
 dnf5 -y remove \
-        kwallet
+        kf5-kwallet \
+        kf6-kwallet \
+        kf5-kwallet-libs \
+        kf6-kwallet-libs
 
 #### Systemd
 
