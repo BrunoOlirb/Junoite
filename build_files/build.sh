@@ -25,14 +25,6 @@ dnf5 -y install \
         google-noto-serif-cjk-fonts \
         --setopt=install_weak_deps=False
 
-### Remove kwallet packages.
-
-dnf5 -y remove \
-        kf5-kwallet \
-        kf6-kwallet \
-        kf5-kwallet-libs \
-        kf6-kwallet-libs
-
 #### Systemd
 
 systemctl enable sddm.service
