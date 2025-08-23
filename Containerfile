@@ -5,10 +5,11 @@ COPY build_files /
 # Base Image
 FROM quay.io/fedora/fedora-bootc:latest
 
-### MODIFICATIONS
-## make modifications desired in your image and install packages by modifying the build.sh script
-## the following RUN directive does all the things required to run "build.sh" as recommended.
+# Add files
+COPY --chmod=0755 ./system/bin/flatpak-updater /usr/local/bin/
+COPY --chmod=0644 ./system/systemd/* /etc/systemd/system/
 
+# Not knowledgeable enough to understand this, but it comes from upstream
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \

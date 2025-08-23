@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -ouex pipefail
+
+/usr/bin/flatpak update --noninteractive
+/usr/bin/notify-send "flatpaks updated"

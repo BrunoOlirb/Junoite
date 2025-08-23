@@ -29,4 +29,8 @@ dnf5 -y install \
 
 systemctl enable sddm.service
 systemctl set-default graphical.target
+
+systemctl enable flatpak-update.service
+systemctl enable flatpak-update.timer
+
 systemctl enable podman.socket
