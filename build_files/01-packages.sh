@@ -57,7 +57,7 @@ PKGS=(
     plasma-discover-kns # Not flatpak related but its discover related so it's here
 )
 
-dnf5 -y in --setopt="install_weak_deps=False" --exclude=*kwallet "${PKGS[@]}"
+dnf5 -y in --setopt="install_weak_deps=False" "${PKGS[@]}"
 
 ### From ublue main:
 # mitigate upstream packaging bug: https://bugzilla.redhat.com/show_bug.cgi?id=2332429
