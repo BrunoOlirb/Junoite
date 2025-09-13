@@ -29,3 +29,6 @@ dnf config-manager setopt fedora-cisco-openh264.enabled=1
 # COPR
 dnf5 copr enable scottames/ghostty -y
 dnf5 copr enable deltacopy/darkly -y
+
+# Klassy repo
+dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:paul4us/Fedora_42/home:paul4us.repo

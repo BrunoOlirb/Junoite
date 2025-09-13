@@ -27,6 +27,8 @@ PKGS=(
     # CLI tools
     distrobox
     ddcutil
+    micro
+    wl-clipboard # Needed for micro
 
     # Graphical Interface
     sddm
@@ -40,6 +42,7 @@ PKGS=(
     breeze-gtk
     darkly
     kvantum
+    klassy
 
     # Graphical tools
     dolphin
