@@ -36,13 +36,13 @@ PKGS=(
     plasma-nm
     plasma-pa
     @fonts
+
+    # Plasma addons, for sticky notes
+    kdeplasma-addons
     
     # Theming for consistency
     sddm-breeze
     breeze-gtk
-    darkly
-    kvantum
-    klassy
 
     # Graphical tools
     dolphin
@@ -52,6 +52,10 @@ PKGS=(
     emacs
     chromium
     google-chrome-stable
+
+    # LXQT tools that i like better than their KDE alternatives
+    lxqt-archiver
+    lximage-qt
 
     # Flatpaks
     flatpak
