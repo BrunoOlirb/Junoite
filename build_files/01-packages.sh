@@ -51,11 +51,8 @@ PKGS=(
     code
     emacs
     chromium
-    google-chrome-stable
-
-    # LXQT tools that i like better than their KDE alternatives
+    nomacs
     lxqt-archiver
-    lximage-qt
 
     # Flatpaks
     flatpak
