@@ -10,7 +10,7 @@ echo 'fastestmirror=1' | tee -a /etc/dnf/dnf.conf
 echo 'max_parallel_downloads=10' | tee -a /etc/dnf/dnf.conf
 
 # Packages needed to setup repos
-dnf5 -y in dnf5-plugins fedora-workstation-repositories distribution-gpg-keys
+dnf5 -y in dnf5-plugins distribution-gpg-keys
 
 # RPMFusion
 rpmkeys --import /usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-free-fedora-$(rpm -E %fedora) && \
@@ -22,12 +22,8 @@ dnf5 -y --setopt=localpkg_gpgcheck=1 in https://mirrors.rpmfusion.org/free/fedor
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
 echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | tee /etc/yum.repos.d/vscode.repo > /dev/null
 
-# Enabled for chrome and RPMFusion respectively
-dnf config-manager setopt google-chrome.enabled=1
+# Enabled for RPMFusion
 dnf config-manager setopt fedora-cisco-openh264.enabled=1
 
 # COPR
 dnf5 copr enable scottames/ghostty -y
-
-# Klassy repo
-dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:paul4us/Fedora_42/home:paul4us.repo
