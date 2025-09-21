@@ -47,11 +47,12 @@ PKGS=(
     # Graphical tools
     dolphin
     spectacle
-    ghostty
+    kitty
     code
     emacs
     chromium
-    nomacs
+    lximage-qt
+    featherpad
     lxqt-archiver
 
     # Flatpaks

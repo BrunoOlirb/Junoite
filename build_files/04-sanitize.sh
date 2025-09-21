@@ -3,7 +3,6 @@
 set -ouex pipefail
 
 dnf5 -y rm rpmfusion*
-dnf5 copr disable scottames/ghostty
 
 dnf5 clean all
 

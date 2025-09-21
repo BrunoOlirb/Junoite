@@ -24,6 +24,3 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 
 # Enabled for RPMFusion
 dnf config-manager setopt fedora-cisco-openh264.enabled=1
-
-# COPR
-dnf5 copr enable scottames/ghostty -y
