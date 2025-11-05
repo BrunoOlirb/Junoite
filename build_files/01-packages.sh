@@ -47,13 +47,9 @@ PKGS=(
     # Graphical tools
     dolphin
     spectacle
-    kitty
+    konsole
     code
-    emacs
     chromium
-    lximage-qt
-    featherpad
-    lxqt-archiver
 
     # Flatpaks
     flatpak

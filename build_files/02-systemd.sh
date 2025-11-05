@@ -5,7 +5,6 @@ set -ouex pipefail
 SYSTEMD_ENABLE=(
     sddm.service
     flatpak-maintenance.timer
-    bootc-upgrade.timer
     podman.socket
 )
 

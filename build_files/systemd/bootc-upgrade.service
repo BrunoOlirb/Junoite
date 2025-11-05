@@ -1,9 +1,0 @@
-[Unit]
-Description=Update system image with bootc
-Documentation=man:bootc(1)
-Wants=network-online.target
-After=network-online.target
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/bootc upgrade
